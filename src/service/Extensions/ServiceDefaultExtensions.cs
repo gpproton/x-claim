@@ -15,7 +15,9 @@ using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Hosting.Server.Features;
 using Microsoft.AspNetCore.ResponseCompression;
 using XClaim.Common.Context;
+using XClaim.Service.Components;
 using XClaim.Service.Helpers;
+using XClaim.Web.Components.Pages;
 
 namespace XClaim.Service.Extensions;
 
@@ -50,6 +52,9 @@ public static class ServiceDefaultExtensions {
                     policy.AllowAnyMethod();
                 });
         });
+        services.AddRazorComponents()
+            .AddInteractiveServerComponents()
+            .AddInteractiveWebAssemblyComponents();
 
         return services;
     }
@@ -75,6 +80,10 @@ public static class ServiceDefaultExtensions {
         app.UseResponseCompression();
         app.UseCors();
         app.RegisterFeatureEndpoints();
+        app.MapRazorComponents<ServerApp>()
+            .AddInteractiveServerRenderMode()
+            .AddInteractiveWebAssemblyRenderMode()
+            .AddAdditionalAssemblies(typeof(Home).Assembly);
 
         return app;
     }
