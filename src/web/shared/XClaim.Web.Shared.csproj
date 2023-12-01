@@ -11,14 +11,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\common\http\XClaim.Common.Http.csproj" />
+    <ProjectReference Include="..\..\common\shared\XClaim.Common.csproj" />
     <PackageReference Include="Blazored.SessionStorage" />
     <PackageReference Include="Microsoft.AspNetCore.Components" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\common\http\XClaim.Common.Http.csproj" />
-    <ProjectReference Include="..\..\common\shared\XClaim.Common.csproj" />
   </ItemGroup>
 
 </Project>
