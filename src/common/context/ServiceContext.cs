@@ -35,7 +35,6 @@ public class ServiceContext : IdentityDbContext<AccountEntity> {
         modelBuilder.RegisterAllEntities<BaseEntity<Guid>>(entitiesAssembly);
         modelBuilder.RegisterAllEntities<AuditableEntity<Guid>>(entitiesAssembly);
         modelBuilder.RegisterSoftDeleteFilter();
-        modelBuilder.EnableAutoHistory<AuditEntity>(o => { });
         modelBuilder.RegisterEnumConverters<NotificationChannels>(typeof(ICollection<NotificationChannels>));
         modelBuilder.RegisterEnumConverters<EventType>(typeof(ICollection<EventType>));
 
@@ -71,7 +70,6 @@ public class ServiceContext : IdentityDbContext<AccountEntity> {
     public DbSet<FileEntity> Files { get; set; } = default!;
     public DbSet<PaymentEntity> Payments { get; set; } = default!;
     public DbSet<ProfileTransferEntity> TransferRequests { get; set; } = default!;
-    public DbSet<AuditEntity> AuditLogs { get; set; } = default!;
 
 
     // TODO: Check things around

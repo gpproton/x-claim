@@ -10,7 +10,6 @@
     <PackageReference Include="Axolotl.EFCore" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.AutoHistory" />
   </ItemGroup>
 
   <ItemGroup>

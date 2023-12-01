@@ -6,24 +6,19 @@
 
   <!-- Shared packages -->
   <ItemGroup Label="Core">
-    <PackageVersion Include="Ardalis.SmartEnum" Version="$(ArdalisVersion)" />
-    <PackageVersion Include="Ardalis.SmartEnum.SystemTextJson" Version="$(ArdalisVersion)" />
-    <PackageVersion Include="Ardalis.Specification" Version="$(ArdalisVersion)" />
     <PackageVersion Include="Microsoft.Extensions.Configuration" Version="$(DotnetVersion)" />
     <PackageVersion Include="Microsoft.Extensions.Http" Version="$(DotnetVersion)" />
-    <PackageVersion Include="Nextended.Core" Version="$(NextendedVersion)" />
   </ItemGroup>
 
   <!-- EFCore packages -->
   <ItemGroup Label="EFCore">
     <PackageVersion Include="EFCore.NamingConventions" Version="8.0.0-rc.2" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="$(EfcoreVersion)" />
-    <PackageVersion Include="Microsoft.EntityFrameworkCore.AutoHistory" Version="6.0.0" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="$(EfcoreVersion)" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="$(EfcoreVersion)" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="$(EfcoreVersion)" />
     <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="$(EfcoreVersion)" />
-    <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0-rc.2" />
+    <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0" />
   </ItemGroup>
 
   <!-- Razor packages -->
@@ -34,12 +29,10 @@
     <PackageVersion Include="Microsoft.AspNetCore.Components.Authorization"
       Version="$(AspCoreVersion)" />
     <PackageVersion Include="Microsoft.Web.LibraryManager.Build" Version="2.1.175" />
-    <PackageVersion Include="MudBlazor" Version="6.11.0" />
   </ItemGroup>
 
-  <!-- Asp.net packages -->
-  <ItemGroup Label="AspNet">
-    <PackageVersion Include="CoreAdmin" Version="2.7.0" />
+  <!-- WebAssembly packages -->
+  <ItemGroup Label="WebAssembly">
     <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly"
       Version="$(AspCoreVersion)" />
     <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer"
@@ -48,6 +41,11 @@
       Version="$(AspCoreVersion)" />
     <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication"
       Version="$(AspCoreVersion)" />
+  </ItemGroup>
+
+  <!-- AspNet packages -->
+  <ItemGroup Label="AspNet">
+    <PackageVersion Include="CoreAdmin" Version="2.7.0" />
     <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="$(AspCoreVersion)" />
     <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageVersion Include="Swashbuckle.AspNetCore.ReDoc" Version="6.5.0" />
@@ -69,7 +67,6 @@
     <PackageVersion Include="Axolotl.Http" Version="$(AxolotlVersion)" />
     <PackageVersion Include="Axolotl.AspNet" Version="$(AxolotlVersion)" />
     <PackageVersion Include="Axolotl.EFCore" Version="$(AxolotlVersion)" />
-    <PackageVersion Include="Axolotl.Razor" Version="$(AxolotlVersion)" />
   </ItemGroup>
 
   <!-- Test packages -->

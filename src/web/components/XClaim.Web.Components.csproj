@@ -10,22 +10,12 @@
 
   <ItemGroup>
     <SupportedPlatform Include="browser" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" />
-    <PackageReference Include="Microsoft.Web.LibraryManager.Build" />
-    <PackageReference Include="Axolotl.Razor" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\common\http\XClaim.Common.Http.csproj" />
     <ProjectReference Include="..\..\common\shared\XClaim.Common.csproj" />
     <ProjectReference Include="..\shared\XClaim.Web.Shared.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Pages\Overview\Index.razor" />
-    <UpToDateCheckInput Remove="Pages\Help\Index.razor" />
-    <UpToDateCheckInput Remove="Pages\Help\_Imports.razor" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" />
+    <PackageReference Include="Microsoft.Web.LibraryManager.Build" />
   </ItemGroup>
 
 </Project>

@@ -20,13 +20,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>preview</LangVersion>
+    <InvariantGlobalization>true</InvariantGlobalization>
     <!-- TODO: Enable when in public release -->
     <!-- <UseArtifactsOutput>true</UseArtifactsOutput> -->
   </PropertyGroup>
 
   <PropertyGroup>
-    <ArdalisVersion>7.0.0</ArdalisVersion>
-    <AxolotlVersion>8.0-rc.1</AxolotlVersion>
+    <ArdalisVersion>8.0.0</ArdalisVersion>
+    <AxolotlVersion>8.0.0</AxolotlVersion>
     <AspCoreVersion>8.0.0</AspCoreVersion>
     <DotnetVersion>8.0.0</DotnetVersion>
     <EfcoreVersion>8.0.0</EfcoreVersion>
