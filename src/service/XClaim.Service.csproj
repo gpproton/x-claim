@@ -7,10 +7,9 @@
     <UserSecretsId>4102fda6-15af-4599-9d0f-a2916d92f41a</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <JsonSerializerIsReflectionEnabledByDefault>true</JsonSerializerIsReflectionEnabledByDefault>
-    <!-- Trim mode filters -->
-    <PublishTrimmed>true</PublishTrimmed>
-    <TrimMode>link</TrimMode>
     <InvariantGlobalization>true</InvariantGlobalization>
+    <InvariantTimezone>true</InvariantTimezone>
+    <BlazorEnableTimeZoneSupport>false</BlazorEnableTimeZoneSupport>
     <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
   </PropertyGroup>
 
